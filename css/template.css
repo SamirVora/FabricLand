@@ -1,0 +1,396 @@
+/* Load fonts for use within the webpage. */
+@font-face{
+	font-family: "Lobster_font"; 
+    src: url('../fonts/Lobster_1.3.otf');
+}
+
+
+body{
+	height: auto;
+	background:#FAFAFA;
+}
+
+
+/* The wrapper class style is used to align and set width of 
+	elements containing contents to be displayed.*/
+.wrapper{
+	min-width: 1000px;
+	max-width: 1000px;
+	height:auto;
+	margin: 0px auto;
+}
+
+
+.wrapper:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+
+/* Style for the hover class, mainly used on text to 
+	display hover states. */
+.hover{
+	color:#333333;
+	text-decoration:none;
+}
+
+.hover:hover{
+	color:#aa3243;
+	text-decoration:underline;
+}
+
+
+/* The header of the webpage. */
+header#main_header{
+	display:block;
+}
+
+
+header#main_header:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+
+/* The banner image next to the website's main heading title. */
+img#banner_img{
+	width:150px;
+	height:90px;
+	position:absolute;
+	top:60px;
+	left:-40px;
+}
+
+/* The header wrapper is set to relative so that the 
+	scissor image could be positioned absolute within it. */
+div#header_wrapper{
+	position:relative;
+}
+
+
+h1#main_heading{
+    width:460px; 
+    margin:10px 0px 15px 110px;
+	font: 110px Lobster_font;
+	color:#8BD1E8;
+	text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+	float:left;
+}
+
+
+/* The container for the telephone number displayed within the header. */
+section#header_contact_container{
+	padding:5px;
+	position:relative;
+}
+
+
+p.header_contacts{
+	margin:5px 5px 0px 0px;
+	font: bold 20px Calibri;
+	color:#aa2343;
+	text-align:right;
+	letter-spacing:2px;
+	position:absolute;
+	top:65px;
+	right:-7px;
+}
+
+
+span.contact_title{
+	margin-right:10px;
+	font:bold 15px Tahoma;
+	color:#000000;
+	text-align:left;
+}
+
+
+/* The container for the search bar. */
+div#search_container{
+	width:310px;
+	height:auto;
+	float:right;
+	margin-top:50px;
+	position:absolute;
+	top:55px;
+	right:-7px;
+}
+
+
+div#search_container:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+
+input#search_box{
+	width: 200px;
+	height: 25px;
+	padding: 5px 5px 5px 12px;
+	font-size: 12px;
+	border: 1px solid #000;
+	float:left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+input#search_button {
+	margin:-0px 0px 0px 5px;
+    padding: 8px 15px 8px 15px;
+	background:#fff;
+	font:16px Helvetica;
+	border:1px solid #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input#search_button:hover{
+	color:#aa2343;
+	background:#fff;
+	-moz-box-shadow: 0px 0px 5px #000000 inset; 
+	-webkit-box-shadow: 0px 0px 5px #000000 inset; 
+	box-shadow: 0px 0px 5px #000000 inset; 
+	-moz-transition: box-shadow .5s, color .3s;
+	-webkit-transition: box-shadow, color, .3s;
+	transition: box-shadow, color, .3s;
+	cursor:pointer;
+}
+
+
+/* The styling for top navigation starts here.*/
+
+nav{
+	display:block;
+	clear:both;
+}
+
+
+nav > ul{
+	list-style: none;
+	text-align:center;
+	position: relative;
+	border-top:2px solid #ccc;
+	border-bottom:2px solid #ccc;
+}
+
+nav ul li{
+	display:inline-block;
+	position:relative;
+}
+
+nav > ul > li > a{
+	width:110px;
+	margin-left: -4px;
+	padding: 12px 10px;
+	background:#fff;
+	font:20px Calibri;
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	border-right:1px solid #ccc;
+}
+
+
+nav > ul > li:first-child > a{
+	border-left:1px solid #ccc;
+
+}
+
+
+nav ul li:hover > a{
+	background:#FFF3DE;
+	color:#aa2343;
+	-moz-box-shadow:0px 0px 5px #ccc inset;
+	-webkit-box-shadow:0px 0px 5px #ccc inset;
+	box-shadow:0px 0px 5px #ccc inset;
+	-moz-transition: box-shadow .2s, color .2s;
+	-webkit-transition: box-shadow, color, .2s;
+	transition: box-shadow, color, .2s;
+}
+
+
+/* The style for the down-arrow within the top navigation. */
+div.arrow-down {
+	border-top: 8px solid #A8A8A8;
+	border-bottom: 0px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position:absolute;
+	top:22px;
+	right:13px;
+}
+
+
+nav ul li.dropdown:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+/* Changes the background of the anchor tag which has the id of current_page. 
+   This is used to show the user which page they are on. */
+nav ul li a#current_page{
+	background: #FFF3DE;
+}
+
+
+/* The styling for the dropdown navigation menu within the top nav starts here. */
+nav ul li > ul{
+	background: #fff;
+	position: absolute;
+	opacity: 0;
+	visibility:hidden;
+}
+
+
+/*Only when hovering over a list element from the main navigation bar
+	should then be the dropdown menu be displayed. */
+nav ul li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+	transition: opacity .4s;
+}
+
+
+nav ul ul li{
+	display: block;
+	border:1px solid #ccc;
+}
+
+nav ul ul li a{
+	width:100px;
+	padding:10px 20px;
+	display:block;
+	font: 19px Calibri;
+	color: #000000;
+	text-decoration:none;
+}
+
+
+/* Breadcrumbs styling start here */
+
+p#breadcrumbs{
+	margin:30px auto;
+	font: 16px Verdana;
+}
+
+p#breadcrumbs > a{
+	color: #aa4235;
+}
+
+
+
+/*The styling for the footer starts here. */
+
+body > footer{
+	min-width: 660px;
+	max-width: 100%;
+	margin-bottom: 20px;
+	padding:20px 20px 10px 20px;
+	background:#ffffff;
+	position: relative;
+	border-top: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	box-shadow: 1px 5px 10px -5px rgba(50, 50, 50, 0.75);	
+	-webkit-box-shadow: 1px 5px 10px -5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 1px 5px 10px -5px rgba(50, 50, 50, 0.75);
+}
+
+
+/* The styling for the footer four lists. */
+section.footer_catagory{
+	width:200px;
+	margin:0px 0px 10px 40px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+
+h5.footer_title{
+	margin-bottom:5px;
+	padding-bottom:5px;
+	font: bold 15px Verdana;
+	color:#000000;
+	letter-spacing:1px;
+	border-bottom:2px solid #e6e6e6;
+}
+
+
+/*The links for the user to click on within the footer. */
+a.footer_links{
+	margin-bottom:7px;
+	display:block;
+	font: 16px Arial;
+	color:#aa3243;
+	text-decoration:none;
+}
+
+
+/* The styling for the content underneath the footer. */
+
+section#footer_legal{
+	width:500px;
+	margin:0px 50px;
+	display:inline-block;
+	font: 14px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+}
+
+/*This styles the copyright information displayed underneath the footer. */
+section#footer_legal > p:first-child{
+	margin-bottom:10px;
+}
+
+
+section#footer_legal > p:first-child > a{
+	font:17px Arial;
+	color:#5f5f5f;
+}
+
+
+section#footer_legal > p:first-child > a:hover{
+	color:#aa3243;
+}
+
+
+/*The container for the social networks. */
+section#footer_social{
+	width:370px;
+	height:80px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+
+/*The styling for each of the social networks. */
+li.socials{
+	height:40px;
+	margin-right:20px;
+	display:inline-block;
+}
+
+
+li.socials > a.social_links > img{
+	width:30px;
+	height:30px;
+	vertical-align:middle;
+}
+
+
+/*The name of the social network.*/
+a.social_links > span{
+	margin-left:5px;
+	padding-bottom:10px;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	color:#5f5f5f;
+}
+

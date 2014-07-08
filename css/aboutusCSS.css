@@ -1,0 +1,160 @@
+/* The style for the element used to display the contents of the webpage. */
+div#content{
+	margin-bottom:20px;
+	padding: 10px 40px 20px 40px;
+	background: #ffffff;
+	border: 1px solid #636876;
+	border-radius:3px;
+	box-shadow:10px 12px 20px -10px #ccc;
+}
+
+
+div#content > h2{
+	margin:20px 0px 10px 0px;
+	padding-bottom:10px;
+	font:bold 40px Calibri;
+	border-bottom:1px solid #ccc;
+}
+
+
+/*The style for the first image depiecting the company's headquarters. */
+img#img_headquarters{
+	width:900px;
+	margin:20px 0px 0px;
+	padding:10px;
+	border:1px solid #cccccc;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	-moz-box-shadow: 0px 15px 10px -10px #ccc;
+	-webkit-box-shadow: 0px 15px 10px -10px #ccc;
+	box-shadow: 0px 15px 10px -10px #ccc;
+}
+
+
+img#img_headquarters:hover{
+	padding:7px;
+	border:4px solid #aa2343;
+	-moz-transition: border .2s;
+	-webkit-transition: border, .2s;
+	transition: border, .2s;
+}
+
+
+figcaption#headquarter_caption{
+	text-align:center;
+	font:22px Calibri;
+	letter-spacing:1px;
+	border-bottom:1px solid #ccc;
+	padding:10px;
+	margin-bottom:20px;
+}
+
+
+/*The style for the About The Company starts. */
+
+article#about_the_business{
+	padding-bottom:30px;
+	border-bottom:1px solid #ccc;
+}
+
+
+article#about_the_business > h3{
+	margin:30px 0px 10px 0px;
+	font:bold 22px Verdana;
+	letter-spacing:1px;
+}
+
+
+figure#natalie_profile{
+	padding:10px 0px;	
+	border: 1px solid #ccc;	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+
+figure#natalie_profile:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+img#natalie{
+	width:140px;
+	height:125px;
+	margin-left:10px;
+	padding:5px;
+	border:1px solid #ccc;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	float:left;
+}
+
+
+figcaption.caption{
+	margin-right:40px;
+}
+
+
+figcaption.caption:after{
+	content: "";  
+	display: block; 
+	clear: both; 
+}
+
+
+figcaption.caption > p:first-child{
+	margin-top:10px;
+}
+
+
+figcaption.caption > p{
+	width:700px;
+	margin:0px auto 10px auto;
+	font:17px Calibri;
+	float:right;
+}
+
+
+/* The style for the images of the employees. */
+
+div#employees_container{
+	width:940px;
+	margin:0px auto;
+}
+
+h3#employees_title{
+	margin:30px 0px 10px 0px;
+	font:bold 22px Verdana;
+	letter-spacing:1px;
+}
+
+img.employee_img{
+	width:200px;
+	height:140px;
+	margin:0px 10px 20px 0px; 
+	padding:5px;
+	border:1px solid #ccc;
+	-moz-box-shadow: 0px 15px 10px -10px #ccc;
+	-webkit-box-shadow: 0px 15px 10px -10px #ccc;
+	box-shadow: 0px 15px 10px -10px #ccc;
+	opacity:0.8;
+}
+
+img.employee_img:hover{
+	margin-right:14px;
+	padding:0px;
+	border:4px solid #aa2343;
+	-moz-box-shadow: 0px 20px 10px -10px #ccc;
+	-webkit-box-shadow: 0px 20px 10px -10px #ccc;
+	box-shadow: 0px 20px 10px -10px #ccc;
+	-moz-transition:border .2s, opacity .2s;
+	-webkit-transition:border, opacity, .2s;
+	transition:border, opacity, .2s;
+	opacity:1;
+}
+

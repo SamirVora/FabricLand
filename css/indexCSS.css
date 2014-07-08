@@ -1,0 +1,250 @@
+/*The styling for the suggested product.*/
+div#left_contents{
+	margin-top:20px;
+	display:inline-block;
+}
+
+/*The container style for the right content: Mini-about us, Ordering Fabrics. */
+div#right_contents{
+	display:inline-block;
+	margin:20px 0px 10px 14px;
+	vertical-align:top;
+}
+
+
+/*The class is used to style the elements containing 
+	contents for the webpage. */
+.content{
+	padding: 10px;
+	background: #ffffff;
+	border: 1px solid #636876;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+
+/*The style for the products displayed on the top left. */
+article.product_catagory{
+	margin:5px;
+	display:inline-block;
+	font:22px Calibri;
+	letter-spacing:1px;
+}
+
+
+article.product_catagory > a > img{
+	width: 280px;
+	height: 140px;
+	padding:5px;
+	border:1px solid #ccc;
+}
+
+
+/*The hover states on the product catagory images. */
+article.product_catagory > a > img:hover{
+	padding:4px;
+	border:2px solid #aa2343;
+}
+
+
+article.product_catagory > h3 {
+	margin:10px 0px 20px;
+    text-align:center; 
+    border-bottom: 1px solid #cccccc; 
+    line-height:0px;
+}
+
+
+article.product_catagory > h3 > span {
+	background:#fff; 
+	padding:0 5px;
+}
+
+
+/*The style for the bottom product. */
+article#product_bottom{
+	margin-top:20px;
+	display:block;
+}
+
+
+article#product_bottom > a > img{
+	width:584px;
+}
+
+
+/*The style for the right content. */
+
+article#mini_about_us{
+	width:330px;
+	margin-bottom:40px;
+}
+
+
+h4.left_cont_title{
+	margin-bottom:10px;
+	padding-bottom:7px;
+	font: 23px Calibri;
+	text-align:center;
+	border-bottom: 1px solid #ccc;
+}
+
+
+p#description{
+	width:210px;
+	display:inline-block;
+	font: 15px Calibri;
+	line-height:20px;
+}
+
+
+img#natalie{
+	width:100px;
+	height:100px;
+	padding:5px;
+	border: 1px solid #e6e6e6;
+	display:inline-block;
+	vertical-align:top;
+}
+
+
+/*The styling for the order information starts here. */
+article#fabric_order_info{
+	width:330px;
+}
+
+
+article#fabric_order_info > p{
+	font: 15px Calibri;
+	line-height:20px;
+}
+
+article#fabric_order_info > p > span{
+	font:bold 17px Calibri;
+	color:#aa3243;
+}
+
+
+article#fabric_order_info > img{
+	width:90px;
+	height:50px;
+	margin:10px 0px 0px 10px;
+}
+/*The styling for the order information ends here. */
+
+
+/*The style for the promotional offer starts here.*/
+
+/*The container for the offer content.*/
+section#offers{
+	margin:10px 0px;
+	background:#FFF8ED;
+	display:block;
+	text-align:left;
+	border: 1px solid #000000;
+	position:relative;
+}
+
+
+section#offers > h4{
+	padding:10px;
+	background:#C0E4F0;
+	display:inline-block;
+	font:bold 15px Tahoma;
+	border-right:1px solid #ccc;
+}
+
+
+section#offers > div{
+	width:920px;
+	display:inline-block;
+	text-align:center;
+}
+
+/*The style for the link within the offer container. */
+section#offers > div > a{
+	padding:0px 15px;
+	font:  16px Calibri;
+	border-right:1px solid #aaa;
+}
+/*The style for the promotional offer ends here.*/
+
+
+/*The style for the featured products start here. */
+
+article#featured_products{
+	margin-bottom:10px;
+	font: 25px Calibri;
+	letter-spacing:2px;
+}
+
+
+h3#featured_products_title{
+    width:100%; 
+    margin:20px 0 20px;
+    text-align:center; 
+    line-height:0px; 
+    border-bottom: 1px solid #cccccc; 
+}
+
+
+h3#featured_products_title > span {
+	padding:0 10px;
+	background:#fff; 
+}
+
+
+figure.product{
+	width:180px;
+	margin: 10px 30px 0px 0px;
+	display:inline-block;
+	position:relative;
+}
+
+
+figure.product > a > img{
+	width:180px;
+	height:150px;
+	padding:5px;
+	border:2px solid #e6e6e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+figure.product > a > img:hover{
+	width:180px;
+	height:150px;
+	border:2px solid #aa2343;
+	-moz-transition: border .3s;
+	-webkit-transition: border, .3s;
+	transition: border, .3s;
+}
+
+
+figure.product > figcaption > a > p{
+	margin-bottom:5px;
+	padding-bottom:3px;
+	font:bold 20px Calibri;
+	text-align:center;
+	border-bottom:1px solid #ccc;
+}
+
+
+figure.product > figcaption > p{
+	text-align:center;
+	font: 16px Calibri;
+}
+
+
+figure.product > figcaption > p > a{
+	font: 19px Calibri;
+}
+
+
+article#featured_products > figure.product:nth-child(2){
+	margin-left:70px;
+}
+
